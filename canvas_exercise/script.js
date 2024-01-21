@@ -18,10 +18,10 @@ function moveBall() {
 function drawBall() {
   context.clearRect(0, 0, 800, 400);
 
-  context.fillStyle = "#62687f";
+  context.fillStyle = "#62687f"; //context.strokeStyle = "red"; context.lineWidth = 5; context.lineCap = "round";
   context.beginPath();
   context.arc(position, 50, radius, 0, 2 * Math.PI);
-  context.fill();
+  context.fill(); //context.stroke();
 }
 
 function animate() {
