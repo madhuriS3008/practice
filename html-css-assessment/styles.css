@@ -1,6 +1,6 @@
-body {
-  background-color: white;
-  margin: 2rem 5%;
+* {
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-size: 3rem;
@@ -8,21 +8,43 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+header,
+nav {
+  background-color: rgb(1, 59, 1);
+}
 header > img {
   display: block;
   margin: 0 auto;
+  padding: 1rem;
+}
+header > img:hover {
+  transform: rotateY(360deg);
+  transition: 3s;
 }
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover {
+  background-color: rgb(3, 219, 3);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
 }
 section {
   display: flex;
+  margin: 1rem;
 }
 article {
   flex: 1;
-  margin: 0 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 footer {
   display: flex;
