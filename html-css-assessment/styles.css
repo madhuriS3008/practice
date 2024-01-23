@@ -9,7 +9,8 @@ h2 {
   font-size: 2rem;
 }
 header,
-nav {
+nav,
+footer {
   background-color: rgb(1, 59, 1);
 }
 header > img {
@@ -29,17 +30,20 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
 }
 nav a:hover {
-  background-color: rgb(3, 219, 3);
+  background-color: rgba(3, 219, 3, 0.9);
   color: black;
   padding: 0.5rem;
   border-radius: 0.25rem;
 }
+main {
+  background-color: rgb(157, 250, 157);
+}
 section {
   display: flex;
-  margin: 1rem;
+  padding: 1rem;
 }
 article {
   flex: 1;
@@ -48,7 +52,11 @@ article {
 }
 footer {
   display: flex;
+  color: rgba(255, 255, 255, 0.8);
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 }
 footer div {
-  flex: 1;
+  /* flex: 1; */
 }
